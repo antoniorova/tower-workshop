@@ -2,7 +2,7 @@
 # tasks file for configure_firewall
 - name: latest security packages installed
   yum:
-    name: "{{ ecurity_packages }}" 
+    name: "{{ security_packages }}" 
     state: latest
 
 - name: firewalld enabled and running
