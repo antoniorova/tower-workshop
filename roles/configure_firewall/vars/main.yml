@@ -4,6 +4,7 @@ services_to_enable:
   - "httpd"
  
 firewall_services:
+  - "firewalld"
   - "http"
 
 security_packages:
