@@ -9,3 +9,4 @@ firewall_services:
 security_packages:
   - "httpd"
   - "nmap"
+  - "firewalld"
