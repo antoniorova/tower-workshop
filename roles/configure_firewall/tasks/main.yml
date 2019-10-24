@@ -5,7 +5,6 @@
     name: "{{ security_packages }}" 
     state: latest
 
-
 - name: configure firewalld
   firewalld:
     service: "{{ item }}"
