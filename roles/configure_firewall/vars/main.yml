@@ -8,5 +8,4 @@ firewall_services:
 
 security_packages:
   - "httpd"
-  - "cowsay"
   - "nmap"
