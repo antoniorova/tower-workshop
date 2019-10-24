@@ -1,6 +1,6 @@
 ---
 - name: Apache server installed
-  hosts: webservers
+  hosts: web
   tasks:
   - name: install httpd
     include_role:
