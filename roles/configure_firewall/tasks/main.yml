@@ -5,12 +5,6 @@
     name: "{{ security_packages }}" 
     state: latest
 
-- name: firewalld enabled and running
-  service:
-    name: "{{ item }}"
-    enabled: true
-    state: started
-  with_items: "{{ services_to_enable }}"
 
 - name: configure firewalld
   firewalld:
@@ -19,4 +13,12 @@
     state: enabled
     immediate: true
   with_items: "{{ firewall_services }}"
+
+
+- name: firewalld enabled and running
+  service:
+    name: "{{ item }}"
+    enabled: true
+    state: started
+  with_items: "{{ services_to_enable }}"
 
